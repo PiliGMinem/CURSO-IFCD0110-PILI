@@ -1,0 +1,13 @@
+.caja-inline {
+    display: inline-block;
+}
+
+
+header,
+footer {
+    margin: 60px;
+}
+
+header{
+    background-color:blue;
+}

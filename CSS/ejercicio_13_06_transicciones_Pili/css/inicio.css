@@ -1,0 +1,47 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+a:visited {
+    color: blueviolet;
+}
+a {
+    text-decoration: none;
+    box-shadow: 2px 2px black;
+}
+.links {
+    text-align: center;
+    margin-top: 5%;
+}
+.inicio, .contacto, .oferta{
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    /*box-shadow: ;*/
+}
+
+.trans1, .trans2, .trans3 { 
+    margin: 30px;
+    display: inline-block;
+    bottom: 2vh, 2vw;
+   /* -webkit-transition: height 1s , width 1s;  For Safari 3.1 to 6.0  */
+    transition: height 1s, width 1s;
+}
+
+.trans1:hover, .trans2:hover, .trans3:hover{
+    width: 2em;
+    height: 2em;
+}
+
+p{
+    text-align: center;
+    text-shadow: 0.1em 0.1em black;
+    font-family:'Trebuchet MS';
+    color: white;
+}
+.text-1{
+    margin-top: 20%;
+}
+.text-2{
+    font-size: 20px;
+}

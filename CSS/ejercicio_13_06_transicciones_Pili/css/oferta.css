@@ -1,0 +1,43 @@
+body{
+    background-image: url(../img/pizza_oferta.jpg);
+    background-size: cover;
+}
+a:visited {
+    color: blueviolet;
+}
+a {
+    text-decoration: none;
+    box-shadow: 2px 2px black;
+}
+.links {
+    text-align: center;
+    margin-top: 5%;
+}
+.inicio, .contacto, .oferta{
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    /*box-shadow: ;*/
+    transition : width 2s, height 2s;
+}
+
+.inicio:hover, .contacto:hover, .oferta:hover{
+    width: 100px;
+    height: 100px;
+}
+
+.text-1{
+    font-family:Arial;
+    font-size: 50px;
+    margin-top: 20%;
+    color: white;
+}
+.text-2{
+    font-family:Arial;
+    font-size: 80px;
+    color:white;
+}
+p{
+    text-align:right;
+    margin: 20px;
+}

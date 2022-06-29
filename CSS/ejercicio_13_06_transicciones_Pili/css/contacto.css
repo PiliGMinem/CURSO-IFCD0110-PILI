@@ -1,0 +1,59 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+a:visited {
+    color: blueviolet;
+}
+a {
+    text-decoration: none;
+    box-shadow: 2px 2px black;
+}
+.links {
+    text-align: center;
+    margin-top: 5%;
+}
+.inicio, .contacto, .oferta{
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    /*box-shadow: ;*/
+    transition : width 2s, height 2s;
+}
+
+.inicio:hover, .contacto:hover, .oferta:hover{
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    padding-top: 200px;
+    text-align: center;
+    text-shadow: 0.1em 0.1em black;
+    font-family:'Trebuchet MS';
+    color: white;
+    font-size: 20px;
+}
+tr, td{
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+tr{
+    height: 50px;
+}
+table{
+    color: white;
+    margin-left:30%;
+    width: 500px;
+}
+#envio{
+    margin: 5px 5px 0px 523px;
+}
+input#nombre, input#edad, input#email{
+    height: 30px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    margin-left: 400px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charsety="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio-html-1/6</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" title="style" />
+
+</head>
+
+<body>
+
+    <!--Encabezado en el que inserto la primera imagen dentro de una celda de una tabla-->
+    <header>
+        <table>
+            <!--Celda de encabezado de la tabla para insertar la imagen como contenido-->
+            <th>
+
+                <img src="img/header-image.png" alt="">
+            </th>
+        </table>
+    </header>
+    <!--Contenido principal dentro del body-->
+    <main>
+        <!--Sección que contiene 2 párrafos y debajo 2 columnas que cada una contiene una imagen y un texto-->
+        <div style="position:center; margin:100px;">
+            <!--Primer párrafo-->
+            <p style="font-size:30px"><b>Lorem ipsum dolor sit amet!</b></p>
+
+            <!--Segundo párrado-->
+            <p style="font-size:25px"><b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis vero. Dolorem
+                    nesciunt
+                    consectetur dolor quae laudantium laboriosam error dolorum culpa! Velit fugiat labore
+                    adipisci,
+                    dolorum eos, nihil eius in incidunt, nostrum similique culpa dignissimos.</b>
+            </p>
+            <!--2 columnas que cada una contiene una imagen y un texto-->
+            <div style="column-count:2; height: 300px;">
+                <!--Imagen 3 y texto debajo y le indico la clase a la imagen con la intención de darle estilo en el archivo de css-->
+                <div class="imagen3">
+                    <img src="img/image3.png" alt="image3">
+                </div>
+                <p style="font-size:25px"><b>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, rerum provident. Officiis
+                        culpa
+                        inventore minus laboriosam laborum ducimus minima asperiores, eos voluptates illo,
+                        eveniet a
+                        veniam.
+                        Porro expedita, voluptatum quam sed perspiciatis repudiandae!</b></p>
+                <!--Imagen 2 y texto debajo y le indico la clase a la imagen con la intención de darle estilo en el archivo de css-->   
+                <div class="imagen2">
+                    <img src="img/image-2.png" alt="image-2">
+                </div>
+
+                <p style="font-size:25px"><b>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius maiores doloribus omnis
+                        nam
+                        minus
+                        sapiente atque illum modi deserunt. Quasi corrupti repudiandae, illum itaque, maxime
+                        dolorem
+                        nostrum
+                        eos labore necessitatibus quam repellendus voluptatibus.</p>
+
+                </b>
+            </div>
+        </div>
+    </main>
+    <!--sección del pie en el body-->
+    <footer>
+        <!--Un div con el color de fondo rojo-->
+        <div style="background-color:red;">
+            <!--div que me contiene texto de la izquierda-->
+            <div class="caja-inline" style="color:white;">
+                <p>Someone, somewhere 2013</p>
+                <p>Unsubscribe to this newsletter instantly</p>
+            </div>
+            <!--div que me contiene las 2 imágenes de la derecha-->
+            <div class="caja-inline">
+                <img src="img/twitter.png" alt="" style="float:right">
+                <img src="img/facebook.png" alt="" style="float:right">
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

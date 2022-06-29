@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <!--Estilos de la tabla, sus celdas "encabezado" y las demás celdas-->
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+        }
+       /*le damos a la tabla todo el ancho del viewport...*/
+
+        table{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio tabla</h1>
+    <!--
+        Vamos a crear una tabla de 3 filas y 4 columnas.
+     -->
+    <!-- los tr son las filas y los td las celdas-->
+    <table>
+        <tr style="text-align:center; background-color:aqua;">
+            <th style="width: 40px">
+                Nombre
+            </th>
+            <th>
+                Apellido
+            </th>
+            <th>
+                Teléfono
+            </th>
+            <th>
+                email
+            </th>
+        </tr>
+        <tr>
+            <!-- Combinar celdas en vertical-->
+            <!--celdas combinadas que ocupan dos filas -->
+            <td rowspan="2">
+                Paco
+            </td>
+            <td>
+                Pérez
+            </td>
+            <td>
+                635986215
+            </td>
+            <td>
+                mail@email.com
+            </td>
+        </tr>
+        <tr>
+            <!-- Combinar celdas en horizontal-->
+            <td colspan="2">1</td>
+            <td>
+                2
+            </td>
+            <td>
+                3
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                2
+            </td>
+            <td>
+                3
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
