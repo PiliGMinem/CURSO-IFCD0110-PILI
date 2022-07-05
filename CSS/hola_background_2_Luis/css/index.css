@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+body{
+  /* El body tiene tipo de letra Arial, Helvetica, sans-serif */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+    /* La dirección url de la imagen de fondo es "../img/orgullo.jpg" */
+    background-image: url("../img/orgullo.jpg");
+    /* La imagen de fondo cubre todo dicho fondo */
+    background-size: cover;
+    /* No se repite dicha imagen de fondo */
+    background-repeat: no-repeat;
+    /* La posición de la imagen de fondo es centrada */
+    background-position:center;
+    /* Establececemos de forma exacta la posición en la que se muestra la caja del elemento */
+    position: absolute;
+    /* Lleva el orden de apilamiento (capa) -1, es decir va por debajo */
+    z-index: -1;
+    /* Mide de ancho el 100% del elemento padre, de alto el 100% del alto del viewport y su posición de la parte superior es 0 y de la posición de la izquierda 0 */
+    width:100%;
+    top:0;
+    left:0;
+    height:100vh;
+
+}
+h1, h2 {
+  /* Tipo de letra Oswald */
+  font-family: 'Oswald';
+}
+
+h2{
+  /* El margen de h2 (distancia a otros elementos es del 30% el alto del viewport */
+  margin-top:30vh;
+}
+
+h1, h2 {
+     /* Color del texto blanco, la sombra del texto es de sombra horizontal 2px, de sombra vertical 2px, de desenfoque 2px y de color negro. El texto está alineado al centro, de ancho mide el 100% del elemento padre. Poseen una transición de 2 segundos */
+     color: white;
+     text-shadow: 2px 2px 2px black;
+     text-align: center;
+     width:100%;
+     transition: 2s
+ }
+ 
+ a, li{
+   /* Los enlaces y los elementos li de las listas */
+   /* ancho del 5% del elemento padre */
+   width:5%;
+   /* El relleno- distancia entre contenido y el borde es de 10px */
+   padding:10px;
+   /* El borde es de ancho 1px, estilo sólido y color blanco */
+   border:1px solid white;
+   /* la sombra del texto es de sombra horizontal 2px, de sombra vertical 2px, de desenfoque 1px y de color negro.*/
+   box-shadow: 2px 2px 1px black;
+   /* la posición se ajusta en relación a su posición normal dentro del flujo de la página*/
+   position:relative;
+   /* color de primer plano del contenido de elemento de texto y decoraciones de texto es blanco */
+   color:white;
+   /* color de fondo el (134, 81, 202, 0.3) en rgba */
+   background-color: rgba(134, 81, 202, 0.3);
+   /* margen entre otros elementos es de 5 px */
+   margin:5px;
+   /* ninguna decoración añadida al texto*/
+   text-decoration: none;
+   
+ }
+
+ /* en los enlaces los elementos <div> sobre los que se está pulsando el ratón */
+ a:active{
+  /* su color es (81, 202, 202) en rgba */
+  color:rgb(81, 202, 202);
+}
+
+/* enlaces visitados */
+a:visited{
+  /* su color es (81, 202, 202) en rgba */
+  color:rgb(81, 202, 202);
+}
+
+/* sección de elementos de navegación */
+ nav{
+  /* los márgenes: hacia arriba es de 30px y hacia la izquierda es de 30px */
+  margin-top:30px;
+  margin-left:30px;
+  /* el texto está alineado de forma centrada */
+  text-align: center;
+ }
+
+/* elementos li de las listas */
+li{
+   /* no muestra ningún marcador en los elementos de las listas */
+   list-style: none;
+   /* altura de 5% alto del viewport */
+   height: 5vh;
+   /* la altura mínima del bloque contenedor es de 80 px */
+   min-height: 80px;
+   /* si la caja de un elemento de contenido se desborda se oculta */
+   overflow: hidden;
+   /* ancho del 20% del elemento padre y ancho mínimo de 180 px */
+   width:20%;
+   min-width: 180px;
+   /* el elemento se debe mostrar creando cajas y en línea de forma simultánea */
+   display: inline-block;
+ }
+
+ /* los elementos de entrada de los formularios tienen de relleno 10px y la propiedad float quita al elemento del flujo normal de la página y lo coloca a la derecha del resto del contenido de su elemento padre (se lo hace "flotar" hacia la derecha) */
+ input{
+   padding: 10px;
+   float: right;
+ }
+
+ /*las listas desordenadas */
+ ul{
+   /* ancho del 90% del elemento padre*/
+   width:90%;
+   /* Establececemos de forma exacta la posición en la que se muestra la caja del elemento */
+   position: absolute;
+   /* la posición de la parte inferior es de 10px  y la de la parte izquierda de 5 px */
+   bottom:10px;
+   left:5px;
+ }
+
+ /* el elemento con id igual a oferta (es un div) tiene una imagen de fondo: la pizza.jpg*/
+ #oferta{
+  background-image: url("../img/pizza.jpg");
+ }
+
+ /* elemento con clase oferta (son el h1 y el h2)*/
+ .oferta{
+  /* su margen izquierdo es del 45% del elemento padre, el derecho del 5% */
+  margin-left:45%;
+  /* ancho del 50% del elemento padre */
+  width: 50%;
+  /* texto alineado a la derecha*/
+  text-align: right;
+  margin-right:5%;
+  /* tamaño de fuente de 100px */
+  font-size: 100px;
+  /* ninguna propiedad tendrá transición */
+  transition: none;
+ }
+
+ /* los h2 con clase oferta */
+ h2.oferta{
+  /* tamaño de letra 60px y margin inferior -25px */
+  font-size: 60px;
+  margin-bottom: -25px
+ }
+
+ /* ver donde tenemos iframe */
+ iframe{
+    /* posiciona una caja moviéndola todo lo posible a la izquierda de su posición original*/
+   float:left
+ }
+
+ /* ver donde tenemos imagen_centrada ¿Es de otro ejercicio? */
+ .imagen_centrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid palevioletred; 
+    margin:50px 25vw 50px 25vw;
+ }
+
+ .imagen_centrada img{
+   height: 25vh;
+ }
+
+ /*--  FORMULARIO --- */
+ input[type='checkbox']{
+  clear: both;
+ }
+
+header{
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:4;
+  text-align: center;
+  width:100%
+}
+
+.required{
+  color:red
+}
+
+ /*Fin formulario*/
+
+ /*-------TRANSICIONES----------*/
+
+ a {
+
+  transition:font-size 0.5s ease-in-out; /* Animation */
+
+ }
+
+a:hover{
+  overflow: hidden;
+  font-size:20px
+
+ }
+
+/*.top{
+  hldfkhjfd
+}*/
+
+ /*
+ .anih1{
+  top:30vh;
+  position:absolute;
+  transition: 2s;
+ }
+ .anih2{
+    margin-top:40vh;
+    position: absolute;
+    transition: ease-in-out 3s;
+ }*/
+ 
+ /*------ TRANSICIONES -----*/
+
+
+ /*------ ANIMACIONES -----*/
+ /*el código de la animación*/
+ @keyframes h1anim {
+  0%   {margin-left:0;}
+  15%  {margin-left:5vh;}
+  30%  {margin-left:10vh;}
+  45%  {margin-left:15vh;}
+  60%  {margin-left:30vh;}
+  75%  {margin-left:35vh;}
+  90%  {margin-left:40vh;}
+  100% {margin-left:45vh;}
+}
+/*se aplica la animación*/
+.oferta{
+  animation-name: h1anim;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+h2.oferta{
+  animation-duration: 0.75s;
+}
+ /*------ANIMACIONES -------*/
