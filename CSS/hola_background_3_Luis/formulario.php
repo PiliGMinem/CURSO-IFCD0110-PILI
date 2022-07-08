@@ -38,7 +38,9 @@
         // echo json_encode($_SERVER);
         $metodo=$_SERVER['REQUEST_METHOD'];
         if ($metodo == "GET"){
-            echo "<h2>Estos datos se  han enviado por GET</h2>";
+            echo "<h2>Estos datos se  han enviado por GET<br>";
+            echo "Tu nombre es: ".$_GET['nombre']."</h2>";
+            exit;
         }
         if($metodo == "POST"){
             echo "<h2>Estos datos se  han enviado por POST<br>";
