@@ -121,6 +121,8 @@ li{
    left:5px;
  }
 
+ #datosusuario{}
+ 
  /* el elemento con id igual a oferta (es un div) tiene una imagen de fondo: la pizza.jpg*/
  #oferta{
   background-image: url("../img/pizza.jpg");
