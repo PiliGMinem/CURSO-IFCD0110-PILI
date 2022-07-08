@@ -38,13 +38,21 @@
         // echo json_encode($_SERVER);
         $metodo=$_SERVER['REQUEST_METHOD'];
         if ($metodo == "GET"){
-            echo "<h2>Estos datos se  han enviado por GET<br>";
-            echo "Tu nombre es: ".$_GET['nombre']."</h2>";
+            echo "<h2>Estos datos se  han enviado por GET<br>
+             Tu nombre es: ".$_GET['nombre']."<br>
+             Tu edad es: ".$_GET['edad']."</br>
+             Tu email es: ".$_GET['email']."</br>
+             Tu teléfono es: ".$_GET['tel']."</br>
+             Cómo vienes: ".$_GET['comoviene']."</h2>";
             exit;
         }
         if($metodo == "POST"){
-            echo "<h2>Estos datos se  han enviado por POST<br>";
-            echo "Tu nombre es: ".$_POST['nombre']."</h2>";
+            echo "<h2>Estos datos se  han enviado por POST<br>
+             Tu nombre es: ".$_POST['nombre']."<br>
+             Tu edad es: ".$_POST['edad']."</br>
+             Tu email es: ".$_POST['email']."</br>
+             Tu teléfono es: ".$_POST['tel']."</br>
+             Cómo vienes: ".$_POST['comoviene']."</h2>";
             exit;
         }
         echo "<h2>Me has llamado por el método ".$metodo."</h2>";
