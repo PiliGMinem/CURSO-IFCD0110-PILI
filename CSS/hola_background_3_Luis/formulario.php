@@ -36,7 +36,17 @@
     <?php
         echo "<br><br><br><hr><h1>Hola Mundo</h1>";
         // echo json_encode($_SERVER);
-        echo "<h2>Me has llamado por el método ".$_SERVER['REQUEST_METHOD']."</h2>";
+        $metodo=$_SERVER['REQUEST_METHOD'];
+        if ($metodo == "GET"){
+            echo "<h2>Estos datos se  han enviado por GET</h2>";
+        }
+        if($metodo == "POST"){
+            echo "<h2>Estos datos se  han enviado por POST<br>";
+            echo "Tu nombre es: ".$_POST['nombre']."</h2>";
+            exit;
+        }
+        echo "<h2>Me has llamado por el método ".$metodo."</h2>";
+        exit;
     ?>
 </body>
 

@@ -35,13 +35,13 @@
     <li id="datosusuario">Datos del usuario:</li>
 
 <!--Empieza el formulario-->
-    <form target="_self" name="form" id="form" action="formulario.php">
+    <form target="_self" name="form" id="form" action="formulario.php" method="post">
         <!-- Estamos usando lista desordenada para los campos de formulario
         Es también habitual hacerlo con los elementos de los menús de navegación
         -->
         <ul>
              <!-- 
-                H1 y H2 aquí van dentro de la etqueta UL para que no se solape con los campos,
+                H1 y H2 aquí van dentro de la etiqueta UL para que no se solape con los campos,
                 ya que este UL está en posición absoluta
              -->
             <h2>Envíanos tus datos</h2>
@@ -121,7 +121,7 @@
             </li>
         </ul>
     </form>
-    <script>
+    <!--  <script>
     window.onload =function(){
         let formulario = document.getElementById('form');
         let datosusuario = document.getElementById('datosusuario');
@@ -145,7 +145,7 @@
        
             
         
-    </script>
+    </script> -->
 </body>
 
 </html>
