@@ -142,10 +142,32 @@
            
         }
     }
-       
-            
-        
     </script> -->
+    <script>
+        window.onload =function(){
+        let formulario = document.getElementById('form');
+        let datosusuario = document.getElementById('datosusuario');
+        formulario.onsubmit=function alerta(i){
+            
+            alert(i);
+         
+        i.preventDefault();
+        let datos = 'Datos del usuario: <hr>';
+            datos+='Nombre: ' +  formulario.elements.nombre.value;
+            datos+='<br>Edad: ' +  formulario.elements.edad.value;
+            datos+='<br>Email: ' +  formulario.elements.email.value;
+            datos+='<br>Teléfono: ' +  formulario.elements.tel.value;
+            datos+='<br>Cómo vienes: ' +  formulario.elements.comoviene.value;
+            datos+='<br>Tiene coche? ' +  formulario.elements.coche.value || 'No tiene coche';
+            datos+='<br>Tiene Moto? ' +  formulario.elements.moto.value || 'No tiene moto';
+            datos+='<br>Tiene barco? ' +  formulario.elements.barco.value;
+            datos+='<br>Curso elegido: ' +  formulario.elements.curso.value;
+            datosusuario.innerHTML=datos;
+           
+        }}
+
+        alerta(217557721786694153);
+    </script>
 </body>
 
 </html>
