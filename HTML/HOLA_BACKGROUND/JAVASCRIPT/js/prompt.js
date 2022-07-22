@@ -11,6 +11,10 @@ edad = prompt('Introduce tu edad');
 // Creamos un condicional para saber si nos han escrito un número
 
 if(Number(edad) == edad){
+    if(edad<18){
+        alert('Tienes que ser mayor de 18 años para entrar a este sitio');
+        window.location.href="https://elpais.com";
+    }
     // Escribimos el resultado
     document.getElementById('main').innerHTML= `
     <h2>Enhorabuena!! Tu edad es </h2>
