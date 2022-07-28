@@ -22,9 +22,11 @@ function escribe(texto){
 // comentado paraque no se dispàre sino con el o0nclick 
 //escribe("Hola Mundo");
 
-
-// función que devuelve datos.
-function sumar(n1, n2){
+//función que devuelve datos.
+function sumar(n1,n2){
+    let n1;
+    let n2;
     let resultado = n1 + n2;
-    return resultado;
+    document.getElementById('main').innerHTML=resultado;
+    // escribimos nturno en el div correspondiente
 }
