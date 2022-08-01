@@ -28,7 +28,8 @@ let palabra_descompuesta = cadena_de_texto.split(' ');
 
 for (let step=0 ; step < palabra_descompuesta.lenght ; step++){
     
-    let texto_en_vertical = palabra_descompuesta[step] +'<br>';
-    
+    palabra_descompuesta[step]; 
 }
-escribe(texto_en_vertical, 'main');
+
+alert(palabra_descompuesta[step]);
+
