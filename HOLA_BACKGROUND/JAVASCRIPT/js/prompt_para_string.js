@@ -26,10 +26,12 @@ escribe (cadena_de_texto, 'main'); */
 let palabra_descompuesta = cadena_de_texto.split(' ');
 
 
-for (let step=0 ; step < palabra_descompuesta.lenght ; step++){
+/*for (let step=0 ; step < palabra_descompuesta.lenght ; step++){
     
     palabra_descompuesta[step]; 
 }
 
-alert(palabra_descompuesta[step]);
+alert(palabra_descompuesta[step]);*/
+
+escribe(palabra_descompuesta,'main');
 

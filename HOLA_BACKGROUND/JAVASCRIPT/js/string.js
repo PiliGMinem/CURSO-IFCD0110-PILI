@@ -1,6 +1,7 @@
 // tratamiento de string (cadenas de texto)
 function escribe(cadena,id){
     document.getElementById(id).innerHTML = cadena;
+    alert(cadena);
 }
 
 export {escribe}
