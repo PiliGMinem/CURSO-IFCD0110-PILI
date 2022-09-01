@@ -62,7 +62,7 @@
     let cerrarSesion = function(){
         sessionStorage.removeItem('esLogin');
         sessionStorage.removeItem('password');
-      //  window.location.href="/LOGINPHP";
+      //  window.location.href="/LOGINPHP3";
       $("#elModal").modal('show');
       $('#bienvenida').hide();
       }
@@ -70,7 +70,7 @@
       
       let esLogin = sessionStorage.getItem('esLogin') || false;
       let pass = sessionStorage.getItem('password') || false;
-      let path = "http://localhost/CURSO-IFCD0110/LOGINPHP/";
+      let path = "http://localhost/CURSO-IFCD0110/LOGINPHP3/";
        if (!esLogin) {
          $("#elModal").modal('show');
          // document.getElementById('elModal').modal('show')
@@ -88,7 +88,7 @@
         //formul.onsubmit = function (e) {  
         e.preventDefault();
         async function envio() { // Declaramos la función que enivará los datos
-          let path = "http://localhost/CURSO-IFCD0110/LOGINPHP/";
+          let path = "http://localhost/CURSO-IFCD0110/LOGINPHP3/";
           //  dni();
           const datos = new FormData(e.target); // Aquí recogemos los datos del form                            // convertidos a objeto
           let toSend = Object.fromEntries(datos); // Creamos el objeto tipo jSon que enviaremos
