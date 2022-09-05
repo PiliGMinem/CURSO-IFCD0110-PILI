@@ -13,14 +13,14 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 // Valores de conexión a la base de datos
 $server = 'localhost';
 $user = 'ifcd0110';
-$pass = 'clase-IFCD0110';
+$pass = 'Pili2022@';
 $db = 'clase';
 
 $conn = mysqli_connect($server, $user, $pass, $db);
 function db_escape($value) {
     $server = 'localhost';
     $user = 'ifcd0110';
-    $pass = 'clase-IFCD0110';
+    $pass = 'Pili2022@';
     $db = 'clase';
 
     $conn = mysqli_connect($server, $user, $pass, $db);

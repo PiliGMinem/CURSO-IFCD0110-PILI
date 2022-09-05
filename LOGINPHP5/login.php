@@ -12,7 +12,7 @@
      // Valores de conexión a la base de datos
      $server = 'localhost';
      $user = 'ifcd0110';
-     $pass = 'clase-IFCD0110';
+     $pass = 'Pili2022@';
      $db = 'clase';
      $conn = mysqli_connect($server, $user, $pass, $db);
         if (!$conn){
